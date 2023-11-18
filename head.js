@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
 };
 
 function head(array) {
-  return array.length > 0 ? array[0] : undefined;
+  return array[0];
 }
 
 assertEqual(head([5,6,7]), 5);
