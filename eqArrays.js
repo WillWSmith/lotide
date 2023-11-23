@@ -24,3 +24,19 @@ assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
+
+/* AI Notes
+
+Can improve the efficiency of the code by breaking the loop after a mismatch is found.
+This can be done using the following example below
+
+for (let i = 0; i < array1.length; i++) {
+  if (array1[i] !== array2[i]) {
+    result = false;
+    break; // stop the loop as soon as a mismatch is found
+  }
+}
+
+Added Note: Try to make comments more concise
+
+*/
