@@ -50,6 +50,7 @@ const result3 = flatten(nestedArray3);
 assertArraysEqual(result3, []); // ✅ 
 
 // Test case 4: Test where flattening might fail (undefined variable)
-const nestedArray4 = [[1, 2, 3], [4, 5, 6], [7, 8, "9"]]; //String "9" instead of element 9
+const nestedArray4 = [[1, 2, 3], [4, 5, 6], [7, 8, "9"]]; // String "9" instead of element 9
 const result4 = flatten(nestedArray4);
-assertArraysEqual(result4, []); // ❌
+assertArraysEqual(result4, [1, 2, 3, 4, 5, 6, 7, 8, 9]) //Should because of the 9 difference
+
