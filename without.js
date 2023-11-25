@@ -21,7 +21,16 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 function without(source, itemsToRemove) {
-  return source.filter(element => !itemsToRemove.includes(element));
+  const result = [];
+
+  for (let i=0; i < source.length; i++) {
+    const element = source[i];
+
+    if (!itemsToRemove.includes(element)) {
+      result.push(element);
+    }
+  }
+  return result;
 } //function that takes in a source array and removed unwanted elements to return a new array
 
 without([1, 2, 3], [1]) // => [2, 3]
@@ -32,6 +41,9 @@ assertArraysEqual(test, [1, 2, 3]);
 
 const test1 = without([], [1, 2, 3]);
 assertArraysEqual(test1, []);
+
+const test2 = without([1, 2, 3, NaN], [NaN, 4]);
+assertArraysEqual(test2, [1, 2, 3, NaN]);
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
