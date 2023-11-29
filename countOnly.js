@@ -20,7 +20,6 @@ const countOnly = function(allItems, itemsToCount) {
         results[item] = 1;
       }
     }
-    console.log(item); //lists each item in array
   }
 
   return results;
