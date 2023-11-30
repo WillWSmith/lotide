@@ -20,7 +20,6 @@ const findKeyByValue = function(object, search) {
       return key;                         //returns a match if found
     }
   }
-  return undefined;                       //otherwise returns undefined
 };
 
 
