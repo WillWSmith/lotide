@@ -1,6 +1,7 @@
 const assertEqual = require(`../assertEqual`);
 const tail = require(`../tail`);
 
+// Test Case: Check the returned array
 const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result.length, 2);
 assertEqual(result[0], "Lighthouse");
