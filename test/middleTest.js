@@ -9,4 +9,4 @@ const array4 = [1, 2, 3, 4, 5, 6, 7];
 assertArraysEqual(middle(array1), [3]); // ✅
 assertArraysEqual(middle(array2), [3, 4]); // ✅
 assertArraysEqual(middle(array3), []); // ✅
-assertArraysEqual(middle(array4), [3, 4]); // ❌
+assertArraysEqual(middle(array4), [4]); // ✅
