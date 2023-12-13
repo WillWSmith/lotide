@@ -11,7 +11,3 @@ const countLetters = function(string) {
 };
 
 module.exports = countLetters;
-
-// const result1 = countLetters("LHL");
-// assertEqual(result1.L, 2);
-// assertEqual(result1.H, 1);

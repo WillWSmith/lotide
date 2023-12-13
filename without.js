@@ -13,19 +13,3 @@ function without(source, itemsToRemove) {
 
 module.exports = without;
 
-// without([1, 2, 3], [1]) // => [2, 3]
-// without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
-
-// const test = without([1, 2, 3], []);
-// assertArraysEqual(test, [1, 2, 3]);
-
-// const test1 = without([], [1, 2, 3]);
-// assertArraysEqual(test1, []);
-
-// const test2 = without([1, 2, 3, NaN], [NaN, 4]);
-// assertArraysEqual(test2, [1, 2, 3, NaN]);
-
-// const words = ["hello", "world", "lighthouse"];
-// without(words, ["lighthouse"]); // no need to capture return value for this test case
-// // Make sure the original array was not altered by the without function
-// assertArraysEqual(words, ["hello", "world", "lighthouse"]);

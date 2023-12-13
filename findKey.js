@@ -13,20 +13,3 @@ const findKey = function(object, callback) {
 
 module.exports = findKey;
 
-// const test1 = {
-//   firstName: "John",
-//   lastName: "Doe",
-//   age: 30,
-//   city: "New York",
-// };
-// const results1 = findkey(test1, value => value === 30);
-// assertEqual(results1, "age");
-
-// const test2 = {
-//   title: "The Hitchhiker's Guide to the Galaxy",
-//   author: "Douglas Adams",
-//   genre: "Science Fiction",
-//   year: 1979,
-// };
-// const results2 = findkey(test2, value => value === "Science Fiction");
-// assertEqual(results2, "genre");
